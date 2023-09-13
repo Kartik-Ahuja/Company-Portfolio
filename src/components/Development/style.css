@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    position: relative;
+    margin: 50px 200px;
+    border: 1px solid;
+    padding: 20px 40px;
+}
+
+.description {
+    text-align: justify;
+}
+
+.projectImage {
+    border: 2px solid;
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+
+}

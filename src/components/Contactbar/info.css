@@ -1,0 +1,57 @@
+.infoStyle {
+  background: rgb(24, 23, 23);
+  color: white;
+  padding: 20px 0px;
+
+  margin-top: 150px;
+
+
+}
+
+.infoStyle>h2 {
+  border-top: 1px solid rgb(127, 126, 126);
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.bottom-logo {
+  width: 180px;
+  position: relative;
+  left: 43%;
+}
+
+.phone {
+
+  text-align: left;
+}
+
+.Email {
+
+  text-align: left;
+}
+
+
+
+.Address {
+  width: 30%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.cop {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar-item {
+  padding: 10px;
+  cursor: pointer;
+}

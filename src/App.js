@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Web from './components/Development/web';
+import Mainpage from './components/Mainpage';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from './components/Navbar';
+import AppDev from './components/Development/App';
+import Blockchain from './components/Development/Blockchain';
+import Software from './components/Development/Software';
+import MLM from './components/Development/MLM';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Web /> */}
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route path='/Mainpage' element={<Mainpage />} ></Route>
+          <Route path='/Web' element={<Web />}></Route>
+          <Route path='/App' element={<AppDev />}></Route>
+          <Route path='/Blockchain' element={<Blockchain />}></Route >
+          <Route path='/Software' element={<Software />}></Route>
+          <Route path='/MLM' element={<MLM />}></Route>
+        </Routes>
+
+      </BrowserRouter >
+
     </div>
   );
 }
