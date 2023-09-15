@@ -12,15 +12,33 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 export default function Testimonial() {
     const objectslider = [
         {
-            image: projectbg,
-            name: "Name",
-            content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quo.",
-            star: " ⭐⭐⭐⭐"
+
+            name: "Ankush Kumar",
+            content: "I had an excellent experience working with this company for mobile app development. They have a highly skilled team that is knowledgeable in the latest technologies and trends. They guided me throughout the development process, providing regular updates and addressing any concerns promptly.",
+            star: " ⭐⭐⭐⭐⭐"
         },
         {
-            image: projectbg,
-            name: "Name",
-            content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quo.",
+
+            name: "Raushan Kumar",
+            content: "I hired this company for web development services, and I couldn't be happier with the results. They were able to create a website that perfectly represents my brand and showcases my products in an engaging way. The team was collaborative throughout the process and ensured that all my requirements were met. I highly recommend their web development services.",
+            star: " ⭐⭐⭐⭐⭐"
+        },
+        {
+
+            name: "Lakshmi Kumari",
+            content: "The web development services provided by this company are truly exceptional. They have a talented team of developers who are skilled in creating responsive and user-friendly websites. From start to finish, the communication was smooth, and they were always available to address any concerns or queries. I'm thrilled with the final product and would choose them again in a heartbeat.",
+            star: " ⭐⭐⭐⭐⭐"
+        },
+        {
+
+            name: "Anish Bajaj",
+            content: "As someone who had no prior experience with web development, I was a bit intimidated by the idea of taking a training program. But MetaBlock Technologies made everything so accessible and easy to understand. The instructors were excellent and the materials were very comprehensive. I would definitely recommend this training to anyone.",
+            star: " ⭐⭐⭐⭐⭐"
+        },
+        {
+
+            name: "Vishwas singh",
+            content: "I had an amazing learning experience with the blockchain training provided by this company. The instructors were highly skilled and supportive, creating a positive and engaging learning environment. The curriculum covered all the essential topics, and the hands-on projects gave me practical experience. ",
             star: " ⭐⭐⭐⭐⭐"
         },
 
@@ -49,7 +67,7 @@ export default function Testimonial() {
                         <SwiperSlide className='swiper-slide'>
                             <div key={index} className="contain">
                                 <div className="Name">{data.name}</div>
-                                <img src={data.image} alt="" className="avatar" />
+
                                 <p className="review">{data.content}</p>
                                 <div className="star">{data.star}</div>
                             </div>

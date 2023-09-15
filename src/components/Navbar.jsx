@@ -3,10 +3,7 @@ import logo from '../components/images/logo.png';
 import styled from 'styled-components';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 
 
 
@@ -20,6 +17,7 @@ const Navbar = () => {
   color: white;
   width : 100px;
   height : 30px;
+  cursor: pointer;
 `
         ;
 
@@ -38,51 +36,21 @@ const Navbar = () => {
 
 `;
 
-    const openWhatsApp = () => {
-        window.open('https://wa.me/919358593003', '_blank');
-    };
-
-    const openLinkedIn = () => {
-
-        window.open('https://www.linkedin.com/company/metablocktechnologies/mycompany/', '_blank');
-    };
-
-    const openFacebook = () => {
-
-        window.open('https://www.facebook.com/Metablocktech', '_blank');
-    };
-
-    const sendEmail = () => {
-
-        window.open('mailto:info@metablocktechnologies.in', '_blank');
-    };
+    function scrollToInfo() {
+        const infoSection = document.getElementById('info');
+        if (infoSection) {
+            infoSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
     return (
         <>
             <Navbar>
 
                 <StyledImage onClick={() => navigate('/Mainpage')} src={logo} alt="MetaBlock" />
-                <StyledButton >Contact us</StyledButton>
+                <StyledButton onClick={scrollToInfo}> Contact us</StyledButton>
 
             </Navbar>
-
-
-            <div className="bottom-navbar">
-
-                <div className="navbar-item" onClick={() => openWhatsApp()}>
-                    <WhatsAppIcon />
-                </div>
-                <div className="navbar-item" onClick={() => openLinkedIn()}>
-                    <LinkedInIcon />
-                </div>
-                <div className="navbar-item" onClick={() => openFacebook()}>
-                    <FacebookOutlinedIcon />
-                </div>
-                <div className="navbar-item" onClick={() => sendEmail()}>
-                    <EmailOutlinedIcon />
-                </div>
-            </div>
-
         </>
     );
 };

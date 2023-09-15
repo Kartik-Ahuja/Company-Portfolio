@@ -8,6 +8,7 @@ import Info from './Contactbar/info';
 import FormDialog from './form';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Web from './Development/web';
+import ScrollToTopButton from './Scroll/Gototop';
 
 
 
@@ -310,6 +311,7 @@ const Mainpage = () => {
             {/* ------------------------------contact-------------------------- */}
 
             <Info />
+            <ScrollToTopButton />
 
         </>
     )

@@ -30,7 +30,7 @@ const Info = () => {
     };
 
     return (
-        <div className="infoStyle">
+        <div className="infoStyle" id='info'>
             <img className='bottom-logo' src={logo} alt="" />
             <h2 >Contact Info </h2>
 
