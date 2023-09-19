@@ -42,12 +42,34 @@ const Navbar = () => {
             infoSection.scrollIntoView({ behavior: 'smooth' });
         }
     }
+    function scrollToService() {
+        const ServiceSection = document.getElementById('Service');
+        if (ServiceSection) {
+            ServiceSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    function scrollToPortfolio() {
+        const PortfolioSection = document.getElementById('Portfolio');
+        if (PortfolioSection) {
+            PortfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    function scrollToTestimonial() {
+        const TestimonialSection = document.getElementById('Testimonial');
+        if (TestimonialSection) {
+            TestimonialSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
     return (
         <>
             <Navbar>
 
                 <StyledImage onClick={() => navigate('/Mainpage')} src={logo} alt="MetaBlock" />
+                <StyledButton onClick={() => navigate('/Mainpage')}> Home</StyledButton>
+                <StyledButton onClick={scrollToService}> Services</StyledButton>
+                <StyledButton onClick={scrollToPortfolio}> Portfolio</StyledButton>
+                <StyledButton onClick={scrollToTestimonial}> Testimonials</StyledButton>
                 <StyledButton onClick={scrollToInfo}> Contact us</StyledButton>
 
             </Navbar>

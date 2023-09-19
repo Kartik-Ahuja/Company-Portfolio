@@ -232,7 +232,7 @@ const Mainpage = () => {
             </Hero>
 
 
-            <Service>
+            <Service id='Service'>
                 <ServiceH1>Our Services</ServiceH1>
                 <ServiceCards>
 
@@ -269,7 +269,7 @@ const Mainpage = () => {
 
             {/* ---------------------------------------------Service Section End--------------------- */}
 
-            <PastProjectsHeading>Our Portfolio</PastProjectsHeading>
+            <PastProjectsHeading id='Portfolio'>Our Portfolio</PastProjectsHeading>
 
 
             <PastProjectscontainer>

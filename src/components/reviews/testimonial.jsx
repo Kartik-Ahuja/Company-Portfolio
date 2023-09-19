@@ -47,7 +47,7 @@ export default function Testimonial() {
 
     return (
         <>
-            <h1 className="heading">Testimonials & Reviews</h1>
+            <h1 className="heading" id='Testimonial'>Testimonials & Reviews</h1>
             <div className="Heading-para">People I've worked with have said some nice things...</div>
             <Swiper
                 pagination={{
