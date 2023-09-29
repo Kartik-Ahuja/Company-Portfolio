@@ -2,7 +2,6 @@
   background: rgb(24, 23, 23);
   color: white;
   padding: 20px 0px;
-
   margin-top: 150px;
 
 
@@ -22,18 +21,19 @@
 }
 
 .phone {
-
+  letter-spacing: 1.1px;
   text-align: left;
 }
 
 .Email {
-
+  letter-spacing: 1.1px;
   text-align: left;
 }
 
 
 
 .Address {
+  letter-spacing: 1.1px;
   width: 30%;
   text-align: left;
   word-wrap: break-word;
@@ -54,4 +54,10 @@
 .navbar-item {
   padding: 10px;
   cursor: pointer;
+
+  &:hover {
+    color: #007bff;
+    transition: all .4s ease;
+  }
+
 }

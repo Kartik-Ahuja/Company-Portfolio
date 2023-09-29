@@ -43,7 +43,7 @@ const Info = () => {
                 <div className="Email">
 
                     <h3> Email Id.</h3>
-                    <p>info@metablocktechnologies.in</p>
+                    <p>info@metablocktechnologies.org</p>
                 </div>
                 <div className="Address">
                     <h3>Address

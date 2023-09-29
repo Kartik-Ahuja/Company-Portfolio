@@ -1,6 +1,10 @@
-import logo from '../components/images/logo.png';
-import Image from '../components/images/hero.png';
-import projectbg from '../components/images/projectbg.png';
+import serviceBG from '../components/images/service.png';
+import Image from '../components/images/heroBG.jpg';
+import WEB from '../components/images/WEB.png';
+import Blockchain from '../components/images/BLOCK.png';
+import MLM from '../components/images/MLM.png';
+import Software from '../components/images/SOFT.png';
+import APP from '../components/images/APP.png';
 import styled from 'styled-components';
 import Navbar from './Navbar';
 import Testimonial from './reviews/testimonial';
@@ -18,132 +22,198 @@ const Mainpage = () => {
 
     const navigate = useNavigate();
     const Hero = styled.div`
-    padding: 20px 20px;
+   color : #fff;
+    height: 101vh;
     display : flex;
+    flex-direction: column;
     align-items : center;
+    background-position: center  right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+ 
     `;
     const HeroHeader = styled.h1`
-    text-align: left`;
-
+    position: relative;
+    top: 30vh;
+    right: 30vw;
+`
     const HeroPara = styled.p`
-    text-align: left`;
+    text-align: left;
+    position: relative;
+    top: 30vh;
+    right: 22vw;
+    width: 40vw;
+  letter-spacing: 1.8px;
+  line-height: 2.4;
 
-    const Hero1 = styled.div`
-    margin-left: 100px;
-    width : 50%;
-       
-    `;
-    const Hero2 = styled.div`
-    width : 50%;
-    `;
-    const HeroImage = styled.img`
-     height : 400px
-    `;
+`
 
     // -------------------------------------Hero Section END-----------------------
 
-    const Service = styled.div``;
+    const Service = styled.div`
+    margin: 20px 0px;
+    background-position: center  center;
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    height: 50vh;
+    
+    `;
+
     const ServiceH1 = styled.h1`
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
     `;
 
     const ServiceCards = styled.div`
-         display : flex;
-         align-items : center;
-         padding: 0px 10px;
+    display: flex;
+    align-items : center;
+    padding: 0px 10px;
+    justify-content: space-around;
+
     `;
 
-    const ServiceCardsH2 = styled.h2``;
+    const ServiceCardsH2 = styled.h2`
+    display: flex;
+    justify-content: center;
+    
+    `;
 
     const ServiceCards1 = styled.div`
-     width : 50%;
-     display : flex;
-     flex-direction : column;
+    width: 50 %;
+    display: flex;  
+    flex-direction : column;
     align-items : center;
     `;
 
     const ServiceCards2 = styled.div`
-    width : 50%;
-    display : flex;
+    width: 50 %;
+    display: flex;
     flex-direction : column;
-   align-items : center;
+    align-items : center;
     `;
 
     const ServiceCardsPoints = styled.ul`
-     text-align: left;
+    text-align: left;
+    list-style: square;
+    
+    `;
+    const ServiceCardsInnerPoints = styled.li`
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    line-height: 2;
 
     `;
-    const ServiceCardsInnerPoints = styled.li``;
+
+
 
     // ----------------------------------------------Service Section End---------------------
 
     const PastProjects = styled.div`
-     display: flex;
-       flex-direction: row !important;
+    display: flex;
+    flex-direction: row !important;
 
-     justify-content : center;
-     
-     `;
+    justify-content : center;
+
+    `;
     const PastProjectscontainer = styled.div`
-     display : flex;
-     justify-content : center;
-     flex-wrap : wrap;
-     
-     `;
+    display: flex;
+    justify-content : center;
+    flex-wrap : wrap;
+
+    `;
 
     const PastProjectsbox = styled.div`
-   
-   color : white;
-    background-position: center;
-    padding :50px 10px;
-    border : 1px solid;
-    width  200px ;
-    height : 100px;
-    margin : 10px;
+    position: relative;
+    color: white;
+padding: 50px 10px;
+    border: none;
+    width  200px;
+    height: 100px;
+    margin: 10px;
     border-radius: 20px;
-    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ box-shadow: rgb(0 0 0/69%) 0px 9px 30px -10px, rgb(0 0 0/ 73%) 0px 10px 10px -10px;
+ overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 100%;
+        background: linear-gradient(to right, transparent 50%, red 50%);
+        transition: width 1500ms cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }    
+
 &:hover{
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 0;
+    background-color: #071952;
 
 
     button {
-        display: block  
-      marging-left: 30px;
-    cursor: pointer;
-   background-color: transparent;
-   color: white;
-   border:1px solid white;
-   border-radius: 10px;
+        font-weight:bold;
+            display: block;
+            margin-left: 22%;
+            padding: 10px;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: 2px solid blue  ;
+            border-radius: 100px;
+            transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+            
 
-      }
+            &:hover{
+                background:blue;
+                
+            }
+        }
 
         p{
-            display:  block ; 
+            display: block;
+            text-align: center;
+  letter-spacing: 1.2px;
+
         }
 
 
-}
+    }
 
 
     `;
 
     const PastProjectsHeading = styled.h1`
-    text-align: center;
-    
+   display: flex;
+   justify-content: center;
+
 
     `;
 
     const PastProjectsboxbutton = styled.button`
-   
+
     display: none;
-    
+
     `;
 
 
 
     const PastProjectsboxPara = styled.p`
-   
+
     display: none;
     `;
 
@@ -151,27 +221,34 @@ const Mainpage = () => {
     // -----------------------past project end-----------------------------
 
     const Box = styled.div`
-    align-item:center;
+    border-radius: 20px;
+    background:  #071952;
+    color: white;
+    align-item: center;
     justify-content: space-between;
     display: flex;
-    border: 1px solid;
+    border: none;
     margin: 100px;
     padding: 50px;
-`;
+ box-shadow: rgb(0 0 0/69%) 0px 9px 30px -10px, rgb(0 0 0/ 73%) 0px 10px 10px -10px;
+
+    `;
     const Column1 = styled.h1`
     margin: 10px;
-     
+
     `;
     const Column2 = styled.div`
     font-weight: 600;
+    letter-spacing: 1.1px;
     margin: 10px;
 
     `;
     const Column3 = styled.button`
     margin: 10px;
     cursor: pointer;
-   background-color: transparent;
-   border-radius: 40px;
+    background-color: white;
+    border-radius: 40px;
+    
     `;
 
 
@@ -181,32 +258,32 @@ const Mainpage = () => {
     const Portfolio = [
         {
             path: '/web',
-            BgImage: projectbg,
-            Topic: "Web Development",
+            BgImage: WEB,
+            // Topic: "Web Development",
             Description: " Transforming visions into exceptional web solutions with innovation and expertise"
         },
         {
             path: '/Blockchain',
-            BgImage: projectbg,
-            Topic: " Blockchain Development",
+            BgImage: Blockchain,
+            // Topic: " Blockchain Development",
             Description: "Unlocking blockchain's potential, we deliver secure, innovative solutions for clients."
         },
         {
             path: '/App',
-            BgImage: projectbg,
-            Topic: " App Development",
+            BgImage: APP,
+            // Topic: " App Development",
             Description: "   Crafting innovative mobile apps tailored to your business needs and success"
         },
         {
             path: '/Software',
-            BgImage: projectbg,
-            Topic: "   Software Development",
+            BgImage: Software,
+            // Topic: "   Software Development",
             Description: "Delivering innovative software solutions that exceed client expectations through expertise and collaboration"
         },
         {
             path: '/MLM',
-            BgImage: projectbg,
-            Topic: "  MLM Software Development",
+            BgImage: MLM,
+            // Topic: "  MLM Software Development",
             Description: "Developing software for managing multi-level marketing (MLM) business operations efficiently."
         },
     ]
@@ -218,21 +295,18 @@ const Mainpage = () => {
         <>
 
 
-            <Hero>
-                <Hero1>
-                    <HeroHeader>MetaBlock Technologies</HeroHeader>
-                    <HeroPara>A full-stack mobile and website development company that caters to all your requirements. We specialize in BlockChain and Custom application development for international and regional brands.</HeroPara>
+            <Hero style={{ backgroundImage: `url(${Image})` }}>
 
-                </Hero1>
 
-                <Hero2>
-                    <HeroImage src={Image} alt='Image' />
-                </Hero2>
+                <HeroHeader>MetaBlock Technologies</HeroHeader>
+                <HeroPara>We are a comprehensive full-stack mobile and web development company dedicated to meeting all of your unique requirements. Our expertise extends to blockchain and custom application development, serving both international giants and regional brands with tailor-made digital solutions.</HeroPara>
+
+
 
             </Hero>
 
 
-            <Service id='Service'>
+            <Service id='Service' style={{ backgroundImage: `url(${serviceBG})` }}>
                 <ServiceH1>Our Services</ServiceH1>
                 <ServiceCards>
 
@@ -276,8 +350,8 @@ const Mainpage = () => {
                 {Portfolio.map((content, index) => (
 
                     <PastProjects key={index} >
-                        <PastProjectsbox onClick={() => navigate(content.path)} style={{ backgroundImage: `url(${projectbg})` }}>
-                            <PastProjectsboxbutton onClick={() => navigate(content.path)}>{content.Topic}</PastProjectsboxbutton>
+                        <PastProjectsbox onClick={() => navigate(content.path)} style={{ backgroundImage: `url(${content.BgImage})` }}>
+                            <PastProjectsboxbutton onClick={() => navigate(content.path)}>CLICK HERE >> </PastProjectsboxbutton>
 
 
                             <PastProjectsboxPara>
