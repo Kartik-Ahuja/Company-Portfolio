@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Company-Portfolio/static/css/main.264f4229.css",
+    "main.js": "/Company-Portfolio/static/js/main.70dc681c.js",
+    "static/js/787.9ecde847.chunk.js": "/Company-Portfolio/static/js/787.9ecde847.chunk.js",
+    "static/media/redDotTours.png": "/Company-Portfolio/static/media/redDotTours.43a968b56a8329a97684.png",
+    "static/media/YourBajar.png": "/Company-Portfolio/static/media/YourBajar.eb4061f963a46ef8896f.png",
+    "static/media/Begusarai.png": "/Company-Portfolio/static/media/Begusarai.5a5899a6a82ec49e09cf.png",
+    "static/media/zuraverse.png": "/Company-Portfolio/static/media/zuraverse.8c335b67c8ec7295205d.png",
+    "static/media/Zcart.png": "/Company-Portfolio/static/media/Zcart.1209bf19cef45e4a5c31.png",
+    "static/media/heroBG.jpg": "/Company-Portfolio/static/media/heroBG.74cba4403f9c544e12cb.jpg",
+    "static/media/HTX.png": "/Company-Portfolio/static/media/HTX.e11cbaf3bf3d98aded66.png",
+    "static/media/TestingApp.png": "/Company-Portfolio/static/media/TestingApp.a1b9c2ceb6b3ec0b7927.png",
+    "static/media/ImaginaryOnes.png": "/Company-Portfolio/static/media/ImaginaryOnes.8ab624aa3e2a82bcfba1.png",
+    "static/media/Goofy.png": "/Company-Portfolio/static/media/Goofy.ee6a6646b2aac6cad691.png",
+    "static/media/projectbg.png": "/Company-Portfolio/static/media/projectbg.d017f6b82a23424f85af.png",
+    "static/media/SOFT.png": "/Company-Portfolio/static/media/SOFT.e06bc4f6a05c2d37eb05.png",
+    "static/media/HRM.png": "/Company-Portfolio/static/media/HRM.799fbdda20a2136efd56.png",
+    "static/media/HAWWKS.png": "/Company-Portfolio/static/media/HAWWKS.8eef2b51ce31ad2a1f21.png",
+    "static/media/MLM.png": "/Company-Portfolio/static/media/MLM.65fa21ab42a57985da78.png",
+    "static/media/CRM.png": "/Company-Portfolio/static/media/CRM.ccc95c475aa14637d440.png",
+    "static/media/Billing1.png": "/Company-Portfolio/static/media/Billing1.d79d53d517a9c51c13ee.png",
+    "static/media/APP.png": "/Company-Portfolio/static/media/APP.1e61cb1f9795e8060478.png",
+    "static/media/service.png": "/Company-Portfolio/static/media/service.a283ad2bf6597417def8.png",
+    "static/media/BLOCK.png": "/Company-Portfolio/static/media/BLOCK.b719963b6c9c638103c6.png",
+    "static/media/hero.png": "/Company-Portfolio/static/media/hero.777363dbcbb45a3c403a.png",
+    "static/media/WEB.png": "/Company-Portfolio/static/media/WEB.506b1f3bec55d97aa16c.png",
+    "static/media/logo.png": "/Company-Portfolio/static/media/logo.80cf956f0932626f0393.png",
+    "index.html": "/Company-Portfolio/index.html",
+    "main.264f4229.css.map": "/Company-Portfolio/static/css/main.264f4229.css.map",
+    "main.70dc681c.js.map": "/Company-Portfolio/static/js/main.70dc681c.js.map",
+    "787.9ecde847.chunk.js.map": "/Company-Portfolio/static/js/787.9ecde847.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.264f4229.css",
+    "static/js/main.70dc681c.js"
+  ]
+}
