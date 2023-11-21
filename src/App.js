@@ -19,7 +19,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path='/Mainpage' element={<Mainpage />} ></Route>
+          <Route path='/' element={<Mainpage />} ></Route>
           <Route path='/Web' element={<Web />}></Route>
           <Route path='/App' element={<AppDev />}></Route>
           <Route path='/Blockchain' element={<Blockchain />}></Route >

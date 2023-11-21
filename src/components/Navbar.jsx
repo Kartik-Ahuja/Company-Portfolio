@@ -3,6 +3,7 @@ import logo from '../components/images/logo.png';
 import styled from 'styled-components';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SwipeableTemporaryDrawer from './sidebar';
 
 
 
@@ -47,14 +48,24 @@ const Navbar = () => {
    top: 0;
    left: 0;
    z-index: 1000;
-   width: 100vw;
+   width: 100%;
+
+
    
+
 `;
 
     const Container = styled.div`
     padding-right:80px;
+    
+    @media all and (max-width: 1000px){
+        display: none;
+    }
 
 `
+
+
+
 
 
     function scrollToInfo() {
@@ -86,17 +97,30 @@ const Navbar = () => {
         <>
             <Navbar>
 
-                <StyledLogo onClick={() => navigate('/Mainpage')} src={logo} alt="MetaBlock" />
+                <StyledLogo onClick={() => navigate('/')} src={logo} alt="MetaBlock" />
 
                 <Container>
 
 
-                    <StyledButton onClick={() => navigate('/Mainpage')}> Home</StyledButton>
+                    <StyledButton onClick={() => navigate('/')}> Home</StyledButton>
                     <StyledButton onClick={scrollToService}> Services</StyledButton>
                     <StyledButton onClick={scrollToPortfolio}> Portfolio</StyledButton>
                     <StyledButton onClick={scrollToTestimonial}> Testimonials</StyledButton>
                     <StyledButton onClick={scrollToInfo}> Contact us</StyledButton>
                 </Container>
+
+
+                {/* <Container2>
+
+
+                    <StyledButton2 onClick={() => navigate('/')}> Home</StyledButton2>
+                    <StyledButton2 onClick={scrollToService}> Services</StyledButton2>
+                    <StyledButton2 onClick={scrollToPortfolio}> Portfolio</StyledButton2>
+                    <StyledButton2 onClick={scrollToTestimonial}> Testimonials</StyledButton2>
+                    <StyledButton2 onClick={scrollToInfo}> Contact us</StyledButton2>
+                </Container2> */}
+
+                
             </Navbar>
         </>
     );

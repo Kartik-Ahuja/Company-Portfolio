@@ -26,27 +26,46 @@ const Mainpage = () => {
     height: 101vh;
     display : flex;
     flex-direction: column;
-    align-items : center;
-    background-position: center  right;
-    background-size: cover;
+   padding-left: 8%;
+   padding-top: 10%;
+    background-position: center top;
+    background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 10vh;
+    
+    @media all and (max-width: 1200px){
+    
+    height: 50vh;
+        
+    
+    }
   
  
     `;
     const HeroHeader = styled.h1`
-    position: relative;
-    top: 30vh;
-    right: 30vw;
+   
+    @media all and (max-width: 1200px){
+    
+      font-size: 1.3rem;
+      word-rap: wrap;
+
+    }
+
+   
 `
     const HeroPara = styled.p`
     text-align: left;
-    position: relative;
-    top: 30vh;
-    right: 22vw;
-    width: 40vw;
+       width: 40vw;
   letter-spacing: 1.8px;
   line-height: 2.4;
 
+  
+    @media all and (max-width: 1200px){
+    font-size: 0.8rem;
+   letter-spacing: 1px;
+   line-height: 1.4;        
+
+    }
 `
 
     // -------------------------------------Hero Section END-----------------------
@@ -57,6 +76,12 @@ const Mainpage = () => {
     padding: 30px 0px;
     background-repeat: no-repeat;
     height: 50vh;
+
+    @media all and (max-width: 1200px){
+        margin: 0px 0px;
+
+
+    }
     
     `;
 
@@ -224,30 +249,50 @@ padding: 50px 10px;
     border-radius: 20px;
     background:  #071952;
     color: white;
-    align-item: center;
-    justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     border: none;
     margin: 100px;
     padding: 50px;
  box-shadow: rgb(0 0 0/69%) 0px 9px 30px -10px, rgb(0 0 0/ 73%) 0px 10px 10px -10px;
 
+
+ 
+
     `;
     const Column1 = styled.h1`
-    margin: 10px;
+
+    margin: 20px;
+
+    @media all and (max-width:1200px){
+
+        font-size: 1.4rem;
+    }
 
     `;
     const Column2 = styled.div`
     font-weight: 600;
     letter-spacing: 1.1px;
-    margin: 10px;
+    margin: 20px;
+    text-align: center;
+
+     @media all and (max-width:1200px){
+
+        font-size: 0.8rem;
+    }
 
     `;
     const Column3 = styled.button`
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
     background-color: white;
     border-radius: 40px;
+
+     @media all and (max-width:1200px){
+        font-size: 0.8rem;
+    }
     
     `;
 
